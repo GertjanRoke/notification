@@ -1,11 +1,11 @@
 <?php
 
-namespace IntoTheSource\Notification;
+namespace Snatertj\Notification;
 
 /**
  * NotificationServiceProvider class
  * @package notification
- * @author Gertjan Roke <groke@intothesource.com>
+ * @author Gertjan Roke
  */
 
 use Illuminate\Support\ServiceProvider;
@@ -15,38 +15,37 @@ class NotificationServiceProvider extends ServiceProvider
 {
 
     /**
-	 * Indicates if loading of the provider is deferred.
-	 *
-	 * @var bool
-	 */
-	protected $defer = false;
+     * Indicates if loading of the provider is deferred.
+     *
+     * @var bool
+     */
+    protected $defer = false;
 
-	public function boot()
-	{
+    public function boot()
+    {
         $this->loadViewsFrom(__DIR__ . '/views', 'notification');
 
 		/* Place all the files to the correct path */        
         $this->publishes([
-            __DIR__ . '/views' => base_path('resources/views/vendor/notification'),
+            __DIR__ . '/views' => base_path('resources/views/snatertj/notification'),
             __DIR__ . '/public' => base_path('public'),
         ]);
     }
 
-	public function register()
-	{
-		$this->registerNotification();
-	}
+    public function register()
+    {
+	    $this->registerNotification();
+    }
 
-	private function registerNotification()
-	{
+    private function registerNotification()
+    {
         $this->app->bind(
-            'IntoTheSource\Notification\SessionStore',
-            'IntoTheSource\Notification\LaravelSessionStore'
+            'Snatertj\Notification\SessionStore',
+            'Snatertj\Notification\LaravelSessionStore'
         );
         
         $this->app->bindShared('notification', function () {
-            return $this->app->make('IntoTheSource\Notification\NotificationFlash');
+            return $this->app->make('Snatertj\Notification\NotificationFlash');
         });
-	}
-
+    }
 }
