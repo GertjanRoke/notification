@@ -1,6 +1,6 @@
 <?php
 
-namespace IntoTheSource\Notification;
+namespace Snatertj\Notification;
 
 interface SessionStore
 {
