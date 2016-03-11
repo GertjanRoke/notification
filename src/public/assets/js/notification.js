@@ -1,7 +1,7 @@
 /**
  * Notification function
  * @package notification
- * @author Gertjan Roke <groke@intothesource.com>
+ * @author Gertjan Roke
  */
 
 var Notification = {
