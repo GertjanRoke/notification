@@ -1,15 +1,13 @@
 {
-    "name": "intothesource/notification",
+    "name": "snatertj/notification",
     "description": "notifications",
-    "keywords": ["notifications", "notification", "the source", "thesource", "in to the source", "intothesource"],
-    "homepage": "https://github.com/intothesource/notification",
-    "license": "BSD-2",
+    "keywords": ["notifications", "notification"],
+    "homepage": "https://github.com/snatertj/notification",
+    "license": "MIT",
     "authors": [
         {
             "name": "Gertjan Roke",
-            "email": "gjroke@intothesource.com",
-            "homepage": "http://wwww.intothesource.com",
-            "role": "Developer"
+            "email": "g.a.roke@gmail.com"
         }
     ],
     "require": {
@@ -21,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "IntoTheSource\\Notification\\": "src"
+            "Snatertj\\Notification\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "IntoTheSource\\Notification\\Test\\": "tests"
+            "Snatertj\\Notification\\Test\\": "tests"
         }
     },
     "scripts": {
