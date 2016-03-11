@@ -1,11 +1,11 @@
 <?php
 
-namespace IntoTheSource\Notification;
+namespace Snatertj\Notification;
 
 /**
  * NotificationFlash class
  * @package notification
- * @author Gertjan Roke <groke@intothesource.com>
+ * @author Gertjan Roke
  */
 
 class NotificationFlash
