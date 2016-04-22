@@ -4,7 +4,7 @@ You can use it from your controller and also in the views.
 
 ## Install
 ```bash
-composer require snatertj/notification
+composer require gertjanroke/notification
 ```
 
 ## After install
@@ -15,13 +15,13 @@ Add the following line to `config/app.php`.
 at `providers`:
 
 ```php
-Snatertj\Notification\NotificationServiceProvider::class,
+Gertjanroke\Notification\NotificationServiceProvider::class,
 ```
 
 And at `aliases`:
 
 ```php
-'Notification' => Snatertj\Notification\Facade\Notification::class,
+'Notification' => Gertjanroke\Notification\Facade\Notification::class,
 ```
 
 #### Publish files

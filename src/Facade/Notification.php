@@ -1,6 +1,6 @@
 <?php
 
-namespace Snatertj\Notification\Facade;
+namespace Gertjanroke\Notification\Facade;
 
 use Illuminate\Support\Facades\Facade;
 

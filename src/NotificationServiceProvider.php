@@ -1,6 +1,6 @@
 <?php
 
-namespace Snatertj\Notification;
+namespace Gertjanroke\Notification;
 
 /**
  * NotificationServiceProvider class
@@ -27,7 +27,7 @@ class NotificationServiceProvider extends ServiceProvider
 
 		/* Place all the files to the correct path */        
         $this->publishes([
-            __DIR__ . '/views' => base_path('resources/views/snatertj/notification'),
+            __DIR__ . '/views' => base_path('resources/views/gertjanroke/notification'),
             __DIR__ . '/public' => base_path('public'),
         ]);
     }
@@ -40,12 +40,12 @@ class NotificationServiceProvider extends ServiceProvider
     private function registerNotification()
     {
         $this->app->bind(
-            'Snatertj\Notification\SessionStore',
-            'Snatertj\Notification\LaravelSessionStore'
+            'Gertjanroke\Notification\SessionStore',
+            'Gertjanroke\Notification\LaravelSessionStore'
         );
         
         $this->app->bindShared('notification', function () {
-            return $this->app->make('Snatertj\Notification\NotificationFlash');
+            return $this->app->make('gertjanroke\Notification\NotificationFlash');
         });
     }
 }

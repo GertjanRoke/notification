@@ -1,6 +1,6 @@
 <?php
 
-namespace Snatertj\Notification;
+namespace Gertjanroke\Notification;
 
 interface SessionStore
 {

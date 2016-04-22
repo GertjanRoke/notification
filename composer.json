@@ -1,8 +1,8 @@
 {
-    "name": "snatertj/notification",
+    "name": "gertjanroke/notification",
     "description": "notifications",
     "keywords": ["notifications", "notification"],
-    "homepage": "https://github.com/snatertj/notification",
+    "homepage": "https://github.com/gertjanroke/notification",
     "license": "MIT",
     "authors": [
         {
@@ -19,12 +19,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Snatertj\\Notification\\": "src"
+            "Gertjanroke\\Notification\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Snatertj\\Notification\\Test\\": "tests"
+            "Gertjanroke\\Notification\\Test\\": "tests"
         }
     },
     "scripts": {
