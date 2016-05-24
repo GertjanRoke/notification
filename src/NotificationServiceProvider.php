@@ -45,7 +45,7 @@ class NotificationServiceProvider extends ServiceProvider
         );
         
         $this->app->bindShared('notification', function () {
-            return $this->app->make('gertjanroke\Notification\NotificationFlash');
+            return $this->app->make('Gertjanroke\Notification\NotificationFlash');
         });
     }
 }
